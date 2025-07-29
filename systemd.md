@@ -17,6 +17,7 @@ The exact behaviour can be tuned using the following options:
  - **start**: Start the systemd unit on package installation and stop it on package removal (default `true`).
  - **restart-after-upgrade**: If true, postpone systemd service restart until after upgrade is complete (+ = less downtime, - = can confuse some programs), otherwise stop the service before upgrade and start it again after upgrade (default `true`).
  - **stop-on-upgrade**: If true, stop the systemd service on package upgrade and removal, otherwise stop the service only on package removal (default `true`).
+ - **usr-merge**: If false, use the old, pre-usr-merge paths. This is necessary for old versions of Debian (potentially pre-Bookworm) (default `true`).
 
 #### Systemd unit file naming
 

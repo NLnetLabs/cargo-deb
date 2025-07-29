@@ -13,7 +13,7 @@ use std::fs;
 use std::path::{Path, PathBuf};
 use std::process::Command;
 
-pub const USR_MERGE_DEFAULT: bool = false;
+pub const USR_MERGE_DEFAULT: bool = true;
 
 /// Configuration settings for the `systemd_units` functionality.
 ///
